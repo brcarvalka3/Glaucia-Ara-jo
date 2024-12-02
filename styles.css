@@ -1,0 +1,134 @@
+/* Paleta de cores */
+:root {
+    --beige: #f5f5dc;
+    --brown: #8b4513;
+    --green: #6b8e23;
+    --text-color: #333;
+    --btn-hover: #9c661f;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--beige);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--brown);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: var(--green);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+#about {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+#about img {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    height: auto;
+    
+}
+
+#services, #gallery, #contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-container, .gallery-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service, .gallery-grid img {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: var(--green);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: var(--brown);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
